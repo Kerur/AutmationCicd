@@ -19,6 +19,7 @@ public class BrokenLinks {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		//int count = driver.findElements(By.tagName("a")).size();
 		//System.out.println(count);
+                //Commented for CICD System.out.println(count);
 		List<WebElement> links =driver.findElements(By.cssSelector("li[class='gf-li'] a"));
 		for(WebElement allLinks : links) {
 			String url = allLinks.getAttribute("href");
